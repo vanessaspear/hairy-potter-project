@@ -14,6 +14,6 @@ export const toSellOrNotToSell = (potteryFired) => {
 }
 
 export const usePottery = () => {
-    return potteryForSale.map(potteryForSale => ({...potteryForSale}));
+    return potteryForSale.map(potteryForSale => ([...potteryForSale]));
     //return potteryForSale;
 }

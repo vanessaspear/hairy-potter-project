@@ -7,6 +7,8 @@ import { toSellOrNotToSell } from "./potteryCatalog.js";
 
 import { usePottery } from "./potteryCatalog.js";
 
+import { potteryList } from "./potteryList.js";
+
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery("mug", 8, 6);
 let bowl = makePottery("bowl", 16, 4);
@@ -30,6 +32,12 @@ toSellOrNotToSell(potteryFired);
 console.log(usePottery());
 
 // Invoke the component function that renders the HTML list
+
+let parentHTMLString = document.querySelector(".potteryList");
+
+parentHTMLString.innerHTML = potteryList(potteryFired); 
+
+
 
 
 
